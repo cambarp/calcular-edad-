@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Dosis:wght@200&family=Playfair+Display:ital,wght@1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;1,300&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div class="fondo">
+      <div class="fondo__calculadora">
+          <div class="calculadora__inputs">
+
+              <div class="inputs__conte">
+                  <label class="inputs__label" for="day">DAY</label>
+                  <input class="conte__input" type="number" id="day" placeholder="DD"/>
+                  <p id="mensaje" style="color: #e74c3c;"></p>
+              </div>
+
+              <div class="inputs__conte">
+                  <label class="inputs__label" for="month">MONTH</label>
+                  <input class="conte__input"  type="number" id="month" placeholder="MM " onclick="mostrarMensaje('day')"/>
+                  <p id="mensaje" class="mensaje_error" style="color: #1e1c1c;"></p>
+              </div>
+
+              <div class="inputs__conte">
+                  <label class="inputs__label" for="year">YEAR</label>
+                  <input class="conte__input" type="number" id="year" placeholder="YYYY"/>
+                  <p id="mensaje" style="color: #050404;"></p>
+                  
+                  
+              </div>
+              <button class="calculadora__btn" id="calcularBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+                <g fill="none" stroke="#FFF" stroke-width="2">
+                <path d="M1 22.019C8.333 21.686 23 25.616 23 44"/>
+                <path d="M23 44V0"/>
+                <path d="M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+            </button>
+          </div>
+          
+
+          <div class="calculadora__resultados">
+              <p class="resultados__p"><span id="yearsSpan" class="resultados__span">--</span> years</p>
+              <p class="resultados__p"><span id="monthsSpan" class="resultados__span">--</span> months</p>
+              <p class="resultados__p"><span id="daysSpan" class="resultados__span">--</span> days</p>
+          </div>
+      </div>
+  </div>
+    <script src="js.js"></script>
+    
+
+    
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    
+  </body>
+</html>
